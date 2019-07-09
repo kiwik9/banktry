@@ -55,32 +55,22 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</div>
 					<div class="top-nav">
 						<nav class="navbar navbar-default">
-								<div class="navbar-header">
-									<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-										<span class="sr-only">Toggle navigation</span>
-										<span class="icon-bar"></span>
-										<span class="icon-bar"></span>
-										<span class="icon-bar"></span>
-									</button>
-								</div>
+
 							<!-- Collect the nav links, forms, and other content for toggling -->
 							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 								<ul class="nav navbar-nav">
                                 @if (Route::has('login'))
                                 @auth
                                     <li><a class="active" href="{{ url('/home') }}">Inicio</a></li>
-
                                     @else
-                                    <li><a href="{{ route('login') }}" class="scroll">Iniciar sesion</a></li>
+                                    <li><a href="{{ route('login') }}" class="active" >Iniciar sesion</a></li>
                                     @if (Route::has('register'))
-                                    <li><a href="{{ route('register') }}" class="scroll">Registrarse</a></li>	
+                                    <li><a href="{{ route('register') }}" class="active" >Registrarse</a></li>	
                                     @endif
                                     @endauth
                                 @endif
                                 </ul>
 						
-					<div class="clearfix"> </div>						
-							</div>	
 						</nav>
 						
 				</div>		
@@ -493,18 +483,3 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- //Body -->
 </html>
 
-
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
