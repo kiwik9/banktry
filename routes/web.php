@@ -1,5 +1,6 @@
 <?php
-
+use App\Cuenta;
+use Carbon\Carbon;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -31,3 +32,18 @@ Route::get('/tranferencia', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/tarjeta', function () {
+
+    $time = Carbon::now();
+    Cuenta::create([
+        'nrmcuenta' => Str::random(12),
+        'propietario'=> Auth::user()->id,
+        'saldo' => 500.0,
+        'creado' => $time,
+        'vence' => '2021-10-28 00:00:00',
+    ]);
+    return view('home');
+
+    return view('home');
+})->name('creartarjeta');

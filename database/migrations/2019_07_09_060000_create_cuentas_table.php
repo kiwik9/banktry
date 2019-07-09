@@ -14,8 +14,14 @@ class CreateCuentasTable extends Migration
     public function up()
     {
         Schema::create('cuentas', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->string('nrmcuenta',12);
+            $table->unsignedBigInteger('propietario');
+            $table->double('saldo');
+            $table->date('creado');
+            $table->date('vence');
             $table->timestamps();
+
+            $table->foreign('propietario')->references('id')->on('users');
         });
     }
 

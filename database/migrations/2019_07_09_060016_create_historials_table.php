@@ -15,7 +15,13 @@ class CreateHistorialsTable extends Migration
     {
         Schema::create('historials', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('emisor',12);
+            $table->string('receptor',12);
+            $table->string('monto');
+            $table->date('fecha');
             $table->timestamps();
+
+
         });
     }
 

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Cuenta;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 
 class CuentaController extends Controller
@@ -22,9 +23,9 @@ class CuentaController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create($data)
     {
-        //
+       
     }
 
     /**

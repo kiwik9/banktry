@@ -17,7 +17,21 @@
                   </h6>
                 </div>
                 <div class="card-body">
+                  <hr>
                   Aqui podras realizar tranferencias entre usuarios, asi como pagar servios como TV, Telefonia, Netflix, etc..
+                  <hr>
+                  Para empezar a usar Renzo Bank da clic al boton "Crear Tarjeta" para que se genere tu tarjeta con un saldo de 500 soles.
+                  
+                  <br>
+                  <br>
+                      <div class="row">
+                      <div class="col-sm"></div>
+                      <div class="col-sm">
+                        <a href="{{route('creartarjeta')}}" class="btn btn-success btn-icon-split">Crear tarjeta</a>
+                    </div>
+                      <div class="col-sm"></div>
+                    </div>
+                  
                 </div>
 </div>
     </div>
