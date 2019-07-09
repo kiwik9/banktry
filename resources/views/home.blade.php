@@ -27,7 +27,7 @@
                       <div class="row">
                       <div class="col-sm"></div>
                       <div class="col-sm">
-                        <a href="{{route('creartarjeta')}}" class="btn btn-success btn-icon-split">Crear tarjeta</a>
+                        <a href="" class="btn btn-success btn-icon-split">Crear tarjeta</a>
                     </div>
                       <div class="col-sm"></div>
                     </div>
