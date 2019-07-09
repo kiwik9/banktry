@@ -58,10 +58,10 @@
         </a>
         <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-          <a class="collapse-item" href="buttons.html">Estado de cuenta</a>
-            <a class="collapse-item" href="buttons.html">Realizar transferencia</a>
-            <a class="collapse-item" href="buttons.html">Pago de servios</a>
-            <a class="collapse-item" href="buttons.html">Historial</a>
+          <a class="collapse-item" href="/estado">Estado de cuenta</a>
+            <a class="collapse-item" href="/tranferencia">Realizar transferencia</a>
+            <a class="collapse-item" href="#">Pago de servios</a>
+            <a class="collapse-item" href="/historial">Historial</a>
           </div>
         </div>
       </li>

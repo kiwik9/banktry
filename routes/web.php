@@ -15,6 +15,19 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/estado', function () {
+    return view('estado');
+});
+
+Route::get('/historial', function () {
+    return view('historial');
+});
+
+Route::get('/tranferencia', function () {
+    return view('tranferencia');
+});
+
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
