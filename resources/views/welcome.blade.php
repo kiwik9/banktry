@@ -49,7 +49,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="header-left">
 						<div class="w3layouts-logo grid__item">
 							<h1>
-								<a href="#"><span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span>EDENRED</a>
+								<a href="/"><span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span>RENZOBANK</a>
 							</h1>
 						</div>
 					</div>
